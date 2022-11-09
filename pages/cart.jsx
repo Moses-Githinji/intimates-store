@@ -5,6 +5,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 import Layout from '../components/Layout';
 
 function cart() {
@@ -14,7 +15,7 @@ function cart() {
         <p>my shopping cart</p>
       </div>
       <div className="table-for-orders-history-container">
-        <TableContainer>
+        <TableContainer component={Paper}>
           <Table sx={{ maxWidth: '100%' }} aria-label="simple table">
             <TableHead>
               <TableRow>
@@ -132,7 +133,7 @@ function cart() {
       </div>
       <div className="checkout-previous-btns-container">
         <button className="previous-page-btn">back</button>
-        <button className="previous-page-btn">place order</button>
+        <button className="previous-page-btn">checkout</button>
       </div>
     </Layout>
   );
